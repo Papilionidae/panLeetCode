@@ -7,7 +7,7 @@ import "fmt"
 */
 func twoSum1(nums []int, target int) []int {
 	for i := 0; i < len(nums)-1; i++ {
-		for j := 1; j < len(nums); j++ {
+		for j := i + 1; j < len(nums); j++ {
 			if nums[i]+nums[j] == target {
 				return []int{i, j}
 			}
@@ -33,10 +33,10 @@ func twoSum2(nums []int, target int) []int {
 }
 
 func main() {
-	nums := []int{2, 7, 11, 15, 17}
-	target := 24
-	// result1 := twoSum1(nums, target)
-	// fmt.Println("result:", result1)
+	nums := []int{2, 5, 5, 11}
+	target := 10
+	result1 := twoSum1(nums, target)
+	fmt.Println("result:", result1)
 	result2 := twoSum2(nums, target)
 	fmt.Println("result2:", result2)
 }

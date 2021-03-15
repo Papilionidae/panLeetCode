@@ -6,7 +6,7 @@ class towNumsSum {
    */
   public static int[] twoSum1(int[] nums, int target) {
     for (int i = 0; i < nums.length - 1; i++) {
-      for (int j = 0; j < nums.length; j++) {
+      for (int j = i + 1; j < nums.length; j++) {
         if (nums[i] + nums[j] == target) {
           return new int[] { i, j };
         }
@@ -20,7 +20,6 @@ class towNumsSum {
    */
   public static int[] twoSum2(int[] nums, int target) {
     HashMap<Integer, Integer> map = new HashMap<>();
-    int[] res = new int[2];
     for (int i = 0; i < nums.length; i++) {
       if (map.containsKey(target - nums[i])) {
         return new int[] { map.get(target - nums[i]), i };
