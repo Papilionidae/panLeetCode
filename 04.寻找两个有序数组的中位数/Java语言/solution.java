@@ -51,6 +51,6 @@ public class solution {
     int[] input2 = new int[] { 3, 4 };
 
     double res = new solution().findMedianSortedArrays(input1, input2);
-    system.out.println("result:", res);
+    System.out.println("result:" + res);
   }
 }
