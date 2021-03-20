@@ -20,7 +20,7 @@ func reverse(x int) int {
 func currentReverse(x int) int {
 	res := 0
 	comp1 := ((1 << 31) - 1) / 10
-	comp2 := ((-1 << 31) - 1) / 10
+	comp2 := (-1 << 31) / 10
 	for x != 0 {
 		tmp := x % 10
 		x /= 10
