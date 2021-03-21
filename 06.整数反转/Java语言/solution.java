@@ -16,6 +16,9 @@ public class solution {
   }
 
   public static void main(String[] args) {
-
+    solution solution = new solution();
+    int x = 192361;
+    int res = solution.reverse(x);
+    System.out.println("res:" + res);
   }
 }
